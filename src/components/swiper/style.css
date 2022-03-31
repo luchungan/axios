@@ -1,0 +1,25 @@
+.live-buttle{
+  display: block;
+  width: 280px;
+  height: 40px;
+  display: flex;
+  background-color: #fff;
+  border-radius: 15px;
+  align-items: center;
+}
+.live-bubble-username{
+  flex:1;
+  color: darkturquoise;
+}
+.live-bubble-wording{
+  flex:3;
+  color:#000
+}
+.live-bubble-action{
+  flex:1;
+  display: block;
+  border-radius: 15px;
+  margin: 3px;
+  background-color: red;
+  color: #fff;
+}

@@ -24,7 +24,7 @@ interface Res {
 }
 const myRequest1 = <D, T = any>(config: MyRequestConfig<D>) => {
   const { method = "GET" } = config;
-  if (method == "get" || method == "GET") {
+  if (method === "get" || method === "GET") {
     config.params = config.data;
   }
   return request.request<MyResponse<T>>(config);

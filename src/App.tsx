@@ -1,8 +1,7 @@
-import React ,{useEffect} from 'react';
-import logo from './logo.svg';
+
 import './App.css';
-import request from './server';
 import { get15DaysWeatherByArea } from './server/api';
+import {MySwiper} from './components/swiper'
 function App() {
   
   function handleClick(){
@@ -19,6 +18,10 @@ function App() {
   return (
     <div className="App">
      <button onClick={handleClick}>btn</button>
+     <div className='my-swiper-wrapper'>
+        <MySwiper />
+     </div>
+     
     </div>
   );
 }
