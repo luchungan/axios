@@ -2,6 +2,8 @@
 import './App.css';
 import { get15DaysWeatherByArea } from './server/api';
 import {MySwiper} from './components/swiper'
+import { MySwitchTransition, MyTransition } from './components/transition';
+import { MyNewSwiper } from './components/transition/new-swiper';
 function App() {
   
   function handleClick(){
@@ -21,7 +23,11 @@ function App() {
      <div className='my-swiper-wrapper'>
         <MySwiper />
      </div>
-     
+     <div className='my-swiper-wrapper'>
+        <MyNewSwiper />
+     </div>
+     <MyTransition/>
+     <MySwitchTransition />
     </div>
   );
 }

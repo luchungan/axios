@@ -1,0 +1,72 @@
+.my-fade {
+  opacity: 0;
+  &-enter { opacity: 0 }
+  &-enter-active {
+    opacity: 1;
+    color: red;
+    transition: opacity 300ms;
+  }
+  &-enter-done {
+    opacity: 1;
+  }
+  &-exit { opacity: 1 }
+  &-exit-active {
+    opacity: 0;
+    color: blue;
+    transition: opacity 300ms;
+  }
+  &-exit-done {
+    color: blue;
+    opacity: 0;
+  }
+};
+
+.fade{
+  &-enter .btn{
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  &-enter-active .btn {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  &-exit .btn {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+  &-exit-active .btn {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  &-enter-active .btn,
+  &-exit-active .btn {
+    transition: opacity 500ms, transform 500ms;
+  }
+}
+
+.atmosphere-bubble-cnt {
+  padding: 0 16px;
+}
+
+.atmosphere-bubble-cnt-enter {
+  opacity: 0;
+  transform: translate3d(-60px, 0, 0);
+}
+
+.atmosphere-bubble-cnt-enter-active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.atmosphere-bubble-cnt-exit {
+  opacity: 1;
+}
+
+.atmosphere-bubble-cnt-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+.bubble{
+  color:#fff
+}
